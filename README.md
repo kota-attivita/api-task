@@ -25,7 +25,7 @@ DB_NAME := "dev_api"
 
 CONNECT := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?parseTime=true", DB_USER, DB_PASS, DB_PORT, "3306", DB_NAME)
 
-db, err := gorm.Open(DBMS, CONNECT)
+db, err := gorm.Open("mysql", CONNECT)
 ```
 
 ## Overview
