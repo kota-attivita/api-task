@@ -7,7 +7,7 @@ services:
       - .:/go/src/github.com/api
     tty: true
     ports:
-      - '4000:4000'
+      - '8080:8080'
     depends_on:
       - mysql
     container_name: golang-container
