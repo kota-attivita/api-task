@@ -46,6 +46,8 @@ docker(docker-compose) を使うので下記の記事に従い docker をイン�
 
 [dockerとdocker-composeのインストール](https://qiita.com/tomokei5634/items/7b1e7a121d5d7bc12116)
 
+**for windows**
+[dockerとdocker-composeのインストール](https://zukucode.com/2020/08/docker-install-windows.html)
 
 ## Commands
 
@@ -53,40 +55,70 @@ docker(docker-compose) を使うので下記の記事に従い docker をイン�
 ​
 ### Init
 
-プロジェクトをクローンしたら、ルートディレクトリから下記のコマンドを叩いてください。
+**プロジェクトをクローンしたら、ルートディレクトリから下記のコマンドを叩いてください。**
 
 ```bash
 make start-build
 ```
 
+makeが使えない場合
+
+```bash
+docker-compose up -d --build
+```
+
 ### Start Development
 
-下記のコマンドで開発サーバーが立ち上あがり開発ができるようになります。
+**下記のコマンドで開発サーバーが立ち上あがり開発ができるようになります。**
 
-```
+```bash
 make start
+```
+
+makeが使えない場合
+
+```bash
+docker-compose up -d
 ```
 
 http://localhost:8080
 
 ### Container Close
 
-下記のコマンドで開発サーバーが終了します。
+**下記のコマンドで開発サーバーが終了します。**
 
 ```
 make kill
 ```
 
+makeが使えない場合
+
+```bash
+docker-compose kill
+```
+
 ### log
 
-下記のコマンドでログが確認できます。
+**下記のコマンドでログが確認できます。**
 
 ```
 make logs
 ```
 
-下記のコマンドで開発をしながらログが確認できます。
+makeが使えない場合
+
+```bash
+docker-compose logs
+```
+
+**下記のコマンドで開発をしながらログが確認できます。**
 
 ```
 make logs-go
+```
+
+makeが使えない場合
+
+```bash
+docker logs -f golang-container
 ```

@@ -13,9 +13,6 @@ RUN apk add --no-cache \
   git \
   && go get github.com/pilu/fresh
 
-RUN go get github.com/jinzhu/gorm && \
-  go get github.com/gin-gonic/gin
-
 EXPOSE 8080
 
 CMD ["fresh"]
