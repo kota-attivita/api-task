@@ -16,6 +16,6 @@ RUN apk add --no-cache \
 RUN go get github.com/jinzhu/gorm && \
   go get github.com/gin-gonic/gin
 
-EXPOSE 4000
+EXPOSE 8080
 
 CMD ["fresh"]
