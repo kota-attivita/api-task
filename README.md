@@ -1,4 +1,4 @@
-# Markup Task
+# BackEnd Task
 
 バックエンドの課題です。
 
@@ -10,8 +10,8 @@
 コードする上で下記のルールにしたがって開発をしてください。
 
 - gitで必ずコード管理をする。
-- 必ずDocker環境で作業をしてください。
-- コマンドは記事に乗ってるのを使わずにこちらが用意したコマンドを使ってください。
+- 必ずDocker環境で作業してください。
+- コマンドは記事に乗ってるのでは無く、こちらが用意したコマンドを使ってください。
 
 
 ## DB
@@ -38,7 +38,7 @@ db, err := gorm.Open("mysql", CONNECT)
 
 ## Install
 
-### Node Install
+### Docker Install
 
 docker(docker-compose) を使うので下記の記事に従い docker をインストールしてください。（既にdockerが入っていればスキップ）
 
